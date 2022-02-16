@@ -1,0 +1,13 @@
+tasks.register("foo") {
+    doLast {
+        println("Hello, foo!")
+    }
+}
+
+tasks.register("bar") {
+    doLast {
+        println("Hello, bar!")
+    }
+}
+
+project.gradle.startParameter.setTaskNames(["foo"])
