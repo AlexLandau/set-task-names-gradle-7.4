@@ -21,6 +21,16 @@ BUILD SUCCESSFUL in 573ms
 1 actionable task: 1 executed
 ```
 
+```
+$ ./gradlew --no-configure-on-demand
+
+> Task :foo
+Hello, foo!
+
+BUILD SUCCESSFUL in 568ms
+1 actionable task: 1 executed
+```
+
 Incorrect output when using CoD (setTaskNames is ignored):
 
 ```
@@ -31,6 +41,20 @@ Configuration on demand is an incubating feature.
 Hello, bar!
 
 BUILD SUCCESSFUL in 590ms
+1 actionable task: 1 executed
+```
+
+```
+$ ./gradlew
+Configuration on demand is an incubating feature.
+
+> Task :help
+
+Welcome to Gradle 7.4.
+
+<... help text here ...>
+
+BUILD SUCCESSFUL in 588ms
 1 actionable task: 1 executed
 ```
 
